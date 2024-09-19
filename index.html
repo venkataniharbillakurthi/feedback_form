@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #zero{
+            position: absolute;
+            margin-top: 18px;
+            margin-left: 400px;
+        }
+        #one{
+            position: absolute;
+            margin-top: 18px;
+            margin-left: 430px;
+            display: none;    
+        }
+        #two{
+            position: absolute;
+            margin-top: 18px;
+            margin-left: 480px;
+            display: none;
+        }
+        #three{
+            position: absolute;
+            margin-top: 18px;
+            margin-left: 420px;
+            display: none;
+        }
+        #four{
+            position: absolute;
+            margin-top: 18px;
+            margin-left: 400px;
+            display: none;
+
+        }
+        #five{
+            position: absolute;
+            margin-top: 18px;
+            margin-left: 400px;
+            display: none;
+        }
+        .content{
+            display: flex;
+            justify-content: center;
+            margin-left: -40px;
+        }
+        .star{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 70px;
+            font-size:xx-large;
+        }
+        #star1{
+            cursor: pointer;
+            color: whitesmoke;
+        }
+        #star2{
+            cursor: pointer;
+            color: whitesmoke;
+        }
+        #star3{
+            cursor: pointer;
+            color: whitesmoke;
+        }
+        #star4{
+            cursor: pointer;
+            color: whitesmoke;
+        }
+        #star5{
+            cursor: pointer;
+            color: whitesmoke;
+        }
+        .cntext{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: -70px;
+        }
+        
+        #Submit{
+            margin-left: 570px;
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        
+        
+
+    </style>
+</head>
+<body>    
+    <center><h1 id="h111">Please Give the Feedback...</h1></center>
+    <div class="image">
+        <img src="./zero_star.webp" alt="" width="400px" height="300px" id="zero">
+        <img src="./0ne_star.webp" alt="" width="400px" height="300px" id="one">
+        <img src="./sad-7148071_1280.webp" alt="" width="300px" height="300px" id="two">
+        <img src="./third_star.webp" alt="" width="400px" height="300px" id="three">
+        <img src="./four_star.webp" alt="" width="400px" height="300px" id="four">
+        <img src="./five_star.webp" alt="" width="400px" height="300px" id="five">
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="content">
+        <h2 id="content1">Give The Rating...</h2>
+    </div>
+    <br>
+    <div class="star">
+        <div id="star1"><i class="fa-solid fa-star" onclick=" Star1()"></i></div>
+        <div id="star2"><i class="fa-solid fa-star" onclick=" Star2()"></i></div>
+        <div id="star3"><i class="fa-solid fa-star" onclick=" Star3()"></i></div>
+        <div id="star4"><i class="fa-solid fa-star" onclick=" Star4()"></i></div>
+        <div id="star5"><i class="fa-solid fa-star" onclick=" Star5()"></i></div>
+    </div>
+    <br>
+    
+    <br>
+    <button id="Submit" onclick="TS()">Submit</button><br>
+
+
+    <script>
+        let Img0 = document.getElementById('zero')
+        let Img1 = document.getElementById('one')
+        let Img2 = document.getElementById('two')
+        let Img3 = document.getElementById('three')
+        let Img4 = document.getElementById('four')
+        let Img5 = document.getElementById('five')
+
+        let starr1 = document.getElementById('star1')
+        let starr2 = document.getElementById('star2')
+        let starr3 = document.getElementById('star3')
+        let starr4 = document.getElementById('star4')
+        let starr5 = document.getElementById('star5')
+
+        let TEXT = document.getElementById('content1')
+
+        let TextSubmit = document.getElementById('Submit')
+
+        function Star1(){
+            Img0.style.display = 'none'
+            Img1.style.display = 'flex'
+            Img2.style.display = 'none'
+            Img3.style.display = 'none'
+            Img4.style.display = 'none'
+            Img5.style.display = 'none'
+            starr1.style.color = "yellow"
+            starr2.style.color = "whitesmoke"    
+            starr3.style.color = "whitesmoke"    
+            starr4.style.color = "whitesmoke"    
+            starr5.style.color = "whitesmoke"  
+            TEXT.textContent = " VERY BAD" 
+        }
+        function Star2(){
+            Img0.style.display = 'none'
+            Img1.style.display = 'none'
+            Img3.style.display = 'none'
+            Img4.style.display = 'none'
+            Img5.style.display = 'none'
+            Img2.style.display = 'flex'
+            starr1.style.color = "yellow"
+            starr2.style.color = "yellow"
+            starr3.style.color = "whitesmoke"    
+            starr4.style.color = "whitesmoke"    
+            starr5.style.color = "whitesmoke"    
+            TEXT.textContent = "BAD" 
+        }
+        function Star3(){
+            Img0.style.display = 'none'
+            Img1.style.display = 'none'
+            Img2.style.display = 'none'
+            Img4.style.display = 'none'
+            Img5.style.display = 'none'
+            Img3.style.display = 'flex'
+            starr1.style.color = "yellow"
+            starr2.style.color = "yellow"
+            starr3.style.color = "yellow"
+            starr4.style.color = "whitesmoke"    
+            starr5.style.color = "whitesmoke"    
+            TEXT.textContent = "GOOD" 
+        }
+        function Star4(){
+            Img0.style.display = 'none'
+            Img1.style.display = 'none'
+            Img2.style.display = 'none'
+            Img3.style.display = 'none'
+            Img5.style.display = 'none'
+            Img4.style.display = 'flex'
+            starr1.style.color = "yellow"
+            starr2.style.color = "yellow"
+            starr3.style.color = "yellow"
+            starr4.style.color = "yellow"
+            starr5.style.color = "whitesmoke"       
+            TEXT.textContent = "VERY GOOD" 
+        }
+        function Star5(){
+            Img0.style.display = 'none'
+            Img1.style.display = 'none'
+            Img2.style.display = 'none'
+            Img3.style.display = 'none'
+            Img4.style.display = 'none'
+            Img5.style.display = 'flex'
+            starr1.style.color = "yellow"
+            starr2.style.color = "yellow"
+            starr3.style.color = "yellow"
+            starr4.style.color = "yellow"
+            starr5.style.color = "yellow"    
+            TEXT.textContent = "EXCELLENT" 
+        }
+        function TS(){
+            Img0.style.display = 'flex'
+            Img1.style.display = 'none'
+            Img2.style.display = 'none'
+            Img3.style.display = 'none'
+            Img4.style.display = 'none'
+            Img5.style.display = 'none'
+            starr1.style.color = "whitesmoke"    
+            starr2.style.color = "whitesmoke"    
+            starr3.style.color = "whitesmoke"    
+            starr4.style.color = "whitesmoke"    
+            starr5.style.color = "whitesmoke"    
+            TEXT.textContent = "Give The Rating..." 
+        }
+
+    </script>
+</body>
+</html>
